@@ -6,10 +6,10 @@ MIN_AREA = 200
 COLOR = (255, 0, 255)
 
 # Loading the cascade classifier for number plates
-n_plate_cascade = cv2.CascadeClassifier("Resources/haarcascade_russian_plate_number.xml")
+n_plate_cascade = cv2.CascadeClassifier("Resources/haar_russian_plate_number.xml")
 
 # Initializing video capture
-cap = cv2.VideoCapture("Resources/video12.mp4")
+cap = cv2.VideoCapture("Resources/anpr.mp4")
 cap.set(3, FRAME_WIDTH)
 cap.set(4, FRAME_HEIGHT)
 cap.set(10, 150)
